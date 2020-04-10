@@ -1,0 +1,22 @@
+{% extends "base.html" %}
+
+{% block page_title  %}
+  {{post.judul}}
+{% endblock page_title %}
+
+{% block contents %}
+  <div class="container">
+    <div class="row">
+      <div class="col-md-8 mb-4 mt-3 left">
+        <div class="card-body">
+          <h3 class="text-center">{{post.judul}}</h3>
+          <p class="text-muted">{{post.author}} | {{post.created}}</p>
+          <p class="card-text">{{post.postingan | safe}}</p>
+        </div>
+      </div>
+      {% block sidebar %}
+
+      {% endblock sidebar %}
+    </div>
+  </div>
+{% endblock contents %}
