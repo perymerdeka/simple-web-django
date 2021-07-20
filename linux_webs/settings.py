@@ -132,3 +132,7 @@ MEDIA_URL = '/media/'
 
 # path dimana media akan disimpan
 MEDIA_ROOT = os.path.join(BASE_DIR, 'media/')
+
+
+# upgrade django
+DEFAULT_AUTO_FIELD = 'django.db.models.AutoField'
