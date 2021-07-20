@@ -11,7 +11,7 @@ pip install -r requirements.txt --no-cache-dir --upgrade pip
 ### Upgrade Database
 
 ```bash
-python manage.py makemigrations python manage.py migrate 
+python manage.py makemigrations && python manage.py migrate 
 ```
 
 ### Membuat User
